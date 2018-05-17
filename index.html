@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="assets/css/trainscheduler.css">
+
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Lora|Nova+Mono|Roboto+Condensed" rel="stylesheet">
+
+        <title>Mars One Employee Portal</title>
+
+</head>
+<body id="page-top">
+
+    <div class="container">
+
+        <div id="top"></div>
+
+
+        <nav class="navbar navbar-expand-lg " id="mainNav">
+                <div class="container">
+                        
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger about-click" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger schedule-click" href="#schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger employeeportal-click" href="#employee">Employee Portal</a>
+                        </li>
+                        </ul>
+                </div>
+                 </div>
+        </nav>
+
+
+        
+                <div class="header">
+                
+                        <img id="mars-background" src= "assets/images/gallerymars.jpg">
+                        <h1 class="display-4"> Mars<br> One</h1>
+                        <p class="lead">The best transporation system on Mars.</p>
+                </div>
+       
+
+        <section id="about"></section>
+                 <div class="intro-container">
+                   <p class="lead-two">Mars One was created for the everyday Martian. <br>We pride ourselves in providing the best and only hyper-speed transportation on Mars.
+                        <br>Enjoy the ride.</p> 
+                 </div>
+        </section>
+
+        <section id="schedule">
+        <div class="clock-container">
+                        <div id="clock">
+                                     
+                                <p class="time">The current time:</p>
+                        </div>
+        </div> 
+
+       
+        <div class="current-trains">
+                <h3 class="card-title">Scheduled Trains</h3>
+                <p id="refresh">Click the refresh button on your browser to view updated information.</p>
+
+                <table class="table">
+                 <thead>
+                        <tr>
+                        <th>Train Name</th>
+                         <th>Destination</th>
+                        <th>Frequency (min)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                </table>
+        </div>
+</section>
+
+        
+    
+    
+                
+<section id="employee" >
+        <form class="form">
+                        <h5 class="card-title">Add Train</h5>
+
+                <div class="form-group">
+                  <label for="trainName">Train Name</label>
+                  <input type="text" class="form-control" id="trainName-input">
+                </div>
+                <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="theDestination-input">
+                </div>
+                <div class="form-group">
+                        <label for="fristTrainTime">First Train Time</label>
+                        <input type="text" class="form-control" id="firstTrainTime-input">
+                </div>
+                <div class="form-group">
+                        <label for="frequency">Frequency (min) </label>
+                        <input type="text" class="form-control" id="trainFrequency-input">
+                </div>
+               
+               
+                <button type="submit" class="btn btn-primary submit">Submit</button>
+              </form>
+        </div>
+</div>
+
+</section>  
+         <!-- Footer -->
+    <footer class="footer">
+                <div class="container">
+                  <p class="m-0 text-center">Copyright &copy; moonbeam.tech 2018</p>
+                </div>
+
+
+        <script src="assets/javascript/app.js"></script>
+
+
+    </div>
+
+
+</body>
+</html>
+    
